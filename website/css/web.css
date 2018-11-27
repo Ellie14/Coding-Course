@@ -1,0 +1,24 @@
+.jumbotron {
+  background-image: url("../images/cows_main.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+.navbar {
+  background: -webkit-linear-gradient(top,
+    rgba(0,0,0,1), rgba(0,0,0,.6)) !important;
+  background: -moz-linear-gradient(top,
+    rgba(0,0,0,1), rgba(0,0,0,.6)) !important;
+}
+.navbar-brand {
+  color: white !important;
+}
+.main {
+  margin-top: 50px;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
