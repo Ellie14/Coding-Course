@@ -1,3 +1,6 @@
+nav {
+  font-family: 'Londrina Solid';
+}
 .jumbotron {
   background-image: url("../images/cows_main.jpeg");
   background-size: cover;
@@ -18,7 +21,13 @@
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  font-family: 'Londrina Solid';
 }
 ul {
   list-style-type: none;
+}
+#home {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 100;
 }
