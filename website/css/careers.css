@@ -50,6 +50,10 @@ body {
   max-width: 794px;
 }
 
+.job-item li {
+    color: #080808;
+}
+
 form {
   background: #aaaa;
 }
