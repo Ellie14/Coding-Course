@@ -46,6 +46,7 @@
     </div>
   </nav>
   <div class="main" style="margin-top:60px">
+  <div class="border">
     <h2>Are you interested in becoming one of the team?</h2>
     <p>Check out our job opportunities below and
       submit the attached form if you're interested.</p>
@@ -63,20 +64,24 @@
           </div>
         </li>
         <li>
+          <div class="job-item">
           <ul id="rm">
             <li>Relief Milker</li>
             <li>30 hours / week: 3 hour milking, morning and evening, Mon-Fri</li>
             <li>£15 / hour</li>
             <li><a href="#modal-main" class="milker" rel="modal:open">Inquire?</a></li>
           </ul>
+          </div>
         </li>
         <li>
+          <div class="job-item">
           <ul id="man">
             <li>Farm Manager</li>
             <li>Full Time</li>
             <li>Salary Negotiable</li>
             <li><a href="#modal-main" class="manager" rel="modal:open">Inquire?</a></li>
           </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -84,7 +89,7 @@
   <div id="modal-main" class="modal">
     <h2>Interested?</h2>
     <h2 id="job-title">Job Name</h2>
-    <form class="modal-form" action="index.html" method="post">
+    <form class="modal-form" action="" method="post">
       <label for="first-name">First Name: </label>
       <input id="first-name-field" type="text" name="first-name">
       <label for="surname-field">Last Name: </label>
@@ -93,7 +98,7 @@
       <input id="DOB-field" type="date" name="date-of-birth">
       <label for="contact-field">Email: </label>
       <input id="contact-field" type="email" name="contact-info">
-      <input type="submit" name="submit" value="submit">
+      <input id="submit" type="submit" name="submit" value="submit">
     </form>
   </div>
 <script>
@@ -108,7 +113,19 @@
     }
     $('#job-title').text(job);
   })
+
+  $('#submit').click(function(e){
+    var name = $("#first-name").val();
+    var surname = $("#surname-field").val();
+    var dob = $("#DOB-field").val();
+    var email = $("#contact-field").val();
+    if (name == '' || surname == '' || email == '' || dob == '') {
+      alert("Please complete all fields");
+    }
+  });
+
 </script>
+</div>
 </div>
 
 
